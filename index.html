@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data:">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>AmbrosIA Demo</title>
+        <script type="text/javascript" src="bower_components/pixi.js/bin/pixi.min.js"></script>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/meters.js"></script>
+        <script type="text/javascript" src="js/fft.js"></script>
+        <script type="text/javascript" src="js/waveform.js"></script>
+        <script type="text/javascript" src="js/horseshoe.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/widget.css">
+    </head>
+    <body>
+        <div id="buttons" style="width: 100%; position: absolute; top: 0px; bottom: 30px;">
+            <input type="button" id="show_fft" value="FFT">
+            <input type="button" id="show_meters" value="Meters">
+            <input type="button" id="show_waveform" value="Waveform">
+        </div>
+        <div id="display_area" style="width: 100%; position: absolute; top: 30px; bottom: 0px;">
+        </div>
+    </body>
+</html>
